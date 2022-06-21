@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="1.0 Attacks, Threats and Vulnerabilities" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634930495" ts_lastsave="1638644015">
+    <node name="1.1 Social Attacks" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634930521" ts_lastsave="1646260860">
+      <rich_text foreground="#3333d1d17a7a">•</rich_text>
+      <rich_text> Phishing is the most common for of social engineering
+• Training and awareness program is the best defense against social engineering attacks.
+• Principles 
+   ◇ Authority
+      ▪ One party feels at risk in challenging the other
+   ◇ Intimidation
+      ▪ Establishing a power dynamic
+   ◇ Consensus
+      ▪ Social Proof
+      ▪ People are more likely to do something if someone else does it
+   ◇ Scarcity
+      ▪ Dealing with supply
+   ◇ Familiarity
+      ▪ Emotional connections
+   ◇ Trust
+      ▪ Establishing understanding
+   ◇ Urgency
+      ▪ Dealing with time</rich_text>
+    </node>
+    <node name="1.2 Attack Types" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634930994" ts_lastsave="1646260863">
+      <rich_text>• Rootkits
+   ◇ Can be detected in RAM
+   ◇ Five types of rootkits
+      ▪ Firmware
+      ▪ Virtual
+      ▪ Kernel
+      ▪ Library
+      ▪ Application
+</rich_text>
+    </node>
+    <node name="1.3 App Attacks" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634931341" ts_lastsave="1646260866">
+      <rich_text>• Refactoring
+   ◇ Changing existing code without changing the external behaviour
+• Shimming
+   ◇ putting a layer of code between the driver and OS</rich_text>
+    </node>
+    <node name="1.4 Network Attacks" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634931641" ts_lastsave="1646235205">
+      <rich_text scale="h2">OSI Model (PDNTSPA)</rich_text>
+      <rich_text>
+1. Physical
+   ◇ Hardware
+   ◇ 1 and 0s beome waves of light, volatage, ohase shifts 
+   ◇ Physical layer cmmunicates with layer 1 on other devices and layer 2
+   ◇ 802.3 hardware, USB, Bluetooth, 802.11
+   ◇ Physical connection between two devices
+
+2. Data
+   ◇ Converts the packets for 3 to bit stream for 1
+   ◇ ARP, PPP, 802.3
+   ◇ Switching/Ethernet between two devices
+
+3. Networking
+   ◇ Routing/IP between two devices
+   ◇ communicates with layer 2 and layer 4
+   ◇ ICMP, IP, IPSec
+
+4. Transport
+   ◇ end to end transport
+   ◇ A port is an address specific extension
+   ◇ communicates with layer 5 and 3
+   ◇ Packets/TCP or UDP
+   ◇ TCP, UDP, SCTP
+
+5. Session
+   ◇ Manages comm sessions between machines
+   ◇ Communicates with layer 4 and 6
+   ◇ RTP, NetBIOS
+   ◇ Session/SSL
+
+6. Presentation
+   ◇ Only communicates with layer 5 and 7
+   ◇ SSH, IMAP, TLS
+
+7. Application
+   ◇ Interface for a user to connect to a system and network
+   ◇ HTTP, SMTP, SNMP
+   ◇ Application connection between two devices
+
+• Bluesnarf
+   ◇ Attacker copies data from victim device over bluetooth
+• Bjuejack
+   ◇ Send unsolicited messages over bt
+• Layer 2 attacks
+   ◇ Arp Poisoning
+      ▪ Ap table trusts replies automatically and will update the table
+      ▪ can lead to on-path attack
+   ◇ DNS Poisoning
+      ▪ Changing where DNS is resolved
+   ◇ Domain Hijacking
+   ◇ URL Redirection
+   ◇ Reputation Attacks</rich_text>
+    </node>
+    <node name="1.5 Threat Actors and Vectors" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634932520" ts_lastsave="1646260874">
+      <rich_text>• Vectors
+   ◇ Direct Access
+   ◇ Wireless
+   ◇ E-mail
+   ◇ Supply Chain
+   ◇ Social Media
+   ◇ Cloud
+   ◇ Removable Media
+• Intel Sources
+   ◇ OSINT
+      ▪ DHS
+      ▪ FBI
+      ▪ SANS
+      ▪ VirusTotal
+      ▪ Cisco
+   ◇ Closed/Proprietary
+   ◇ Vulnerability DB
+      ▪ nvd
+      ▪ osvdb
+      ▪ msfdb
+   ◇ PIS
+      ▪ Public/Private information sharing
+      ▪ ISACS
+         - Info sharing and analysis centers
+      ▪ ISAO
+         - Info sharing and analsis organizations
+• IoCs
+   ◇ Outbound Traffic
+   ◇ Strange root behaviour
+   ◇ Unusual geoloc
+   ◇ failed acct logins
+   ◇ unusual db read vol
+   ◇ unusual html response sizes
+   ◇ many requests for one asset
+   ◇ encrypted traffic on plain ports
+   ◇ reg or sys file changes
+   ◇ unusual dns activity
+   ◇ patches
+   ◇ mobile device changes
+   ◇ unusual data movmt
+   ◇ temp ddos indicator
+   ◇ virus sigs
+   ◇ domain names
+   ◇ md5 hashes
+• AIS
+   ◇ STIX &amp; TAXII
+      ▪ STIX is a standard for threat info structure
+      ▪ TAXII is a standard for threat info delivery
+• Research Sources
+   ◇ Vendor sites
+   ◇ Vuln Feeds
+   ◇ Conferences
+   ◇ Academic Journals
+   ◇ RFCs
+   ◇ Local Industry Groups
+   ◇ Social Media
+   ◇ Threat Feeds
+   ◇ TTPs
+      ▪ Tactics, Techniques and Procedures</rich_text>
+    </node>
+    <node name="1.6 Vulnerabilities" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634932742" ts_lastsave="1645386307">
+      <rich_text>• Secure you root/admn accts.
+• Remove unnecessary apps, services and ports
+• change default creds</rich_text>
+    </node>
+    <node name="1.7 Security Assessments" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634932891" ts_lastsave="1646260883">
+      <rich_text>• Intelligence fusion
+   ◇ collecting and analayzing threat feeds from internal and external sources in a large scale
+• Maneuver
+   ◇ Defensive tactic used to prevent attackers from moving laterally
+• Credentialed Scan
+   ◇ More invlved
+   ◇ Can access more parts of an application than non-credntialed but is slower
+• Syslog
+   ◇ can be used for log aggregation
+   ◇ 514 udp
+   ◇ 6514 tcp
+   ◇ /var/log/syslog
+• SIEM
+   ◇ Collect, aggregate and apply pattern matching to volumes of data
+• SOAR
+   ◇ combine data and alarms from various platforms and tools thruout an enterprise and place them at a location where automated responses can then address threats and vulns
+   ◇ can take SIEM data and perform actions on it</rich_text>
+    </node>
+    <node name="1.8 Penetration Testing" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634936924" ts_lastsave="1646260893">
+      <rich_text>• Pentest Methodologies
+   ◇ OSSTMM
+   ◇ OWASP
+   ◇ NIST
+   ◇ PIES
+   ◇ ISSAF</rich_text>
+    </node>
+  </node>
+  <node name="2.0 Architecture and Design" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634937122" ts_lastsave="1635332235">
+    <node name="2.1 Enterprise Security" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634937137" ts_lastsave="1645506191">
+      <rich_text>• Config Management
+   ◇ Diagrams
+      ▪ Physical
+      ▪ Logical
+   ◇ Establishing secure baselines
+   ◇ Naming conventions
+   ◇ Secure IP schemas
+      ▪ Network and Host portions
+         - Subnetting
+      ▪ CIDR notation
+      ▪ Class A/B/C scheme
+         - A = 7 bits for network and 24 bits for hosts
+            → denoted by /8
+         - B = 14 bits for network and 16 bits for hosts
+            → denoted by /16
+• Protecting data
+   ◇ At rest
+      ▪ Encryption is the best means to protect
+   ◇ In transit
+      ▪ Encryption that can be used to prevent data security failures during processing. Secure coding principles, including the definitive wiping 
+   ◇ In processing
+      ▪  that can be used to prevent data security failures during processing. Secure coding principles, including the definitive wiping.
+• Fake Telemetry
+   ◇ Fake network traffic used to convince attackers of a honeynet/honeypots legitimacy.</rich_text>
+    </node>
+    <node name="2.2 Virtualization and Cloud" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634937786" ts_lastsave="1645542219">
+      <rich_text>• IaaS
+   ◇ Infrastructure as a Service
+      ▪ Cloud provided
+         - Data Center
+         - Network and Storage
+         - Physical Servers
+         - Virtualization
+      ▪ Self Managed
+         - Data
+         - Apps
+         - DB
+         - OS
+   ◇ Pay-per-use, scalable as needed.
+• PaaS
+   ◇ Platform as a Service
+      ▪ Cloud Provided
+         - Data Center
+         - Net and Storage
+         - Physical Servers
+         - Virtualization
+         - OS
+      ▪ Self-managed
+         - Data
+         - Apps
+         - DB
+   ◇ A focus on security and scalability
+• SaaS
+   ◇ Software as a Service
+      ▪ Cloud Provided
+         - Data Center
+         - Net and Storage
+         - Physical Servers
+         - Virtualization
+         - OS
+         - DB
+      ▪ Self-managed
+         - Data
+         - Application
+   ◇ Software on demand
+• Edge Computing
+   ◇ Brings the processing closer to the edge of the network optimizing webapps and IoT devices
+• Fog Computing
+   ◇ Computing performed on a distributed, decentralized architecture
+• Containers
+   ◇ OS virtualization, pre-packaged code and dependencies
+• Hypervisor
+   ◇ interface between vm and host, enables virt
+   ◇ Type 1
+      ▪ bare-metal
+   ◇ Type 2
+      ▪ Virtualbox or VMware</rich_text>
+    </node>
+    <node name="2.3 Secure Deployments" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634941766" ts_lastsave="1645543857">
+      <rich_text>• Development
+• Test
+   ◇ Looks and behaves exactly like production
+   ◇ Identical to production
+• Staging
+   ◇ New, experimental features may be added here.
+   ◇ Similar to production
+• Production
+   ◇ Real Data
+• Stored Procedures
+   ◇ Speed
+   ◇ Limit client flexibility to prevent injection vulns
+• Input Validation
+   ◇ Should be performed on the server-side
+• Continuous Monitoring
+• Continuous Validation
+   ◇ Code tested with existing codebase
+• Continuous Integration
+   ◇ Updating and IMproving Codebase
+• Continuous Delivery
+   ◇ Allows updates at any time, as soon as they are ready
+• Continuous Deployment
+   ◇ Delivery without human interaction</rich_text>
+    </node>
+    <node name="2.4 Authentication and Authorization" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634944585" ts_lastsave="1645570754">
+      <rich_text>• Directory Services
+   ◇ Data Storage similar to DB
+   ◇ LDAP
+      ▪ Handles user auth and controls access to AD objects
+      ▪ A client starts an LDAP session by connecting to an LDAP server called a DSA
+         - 389
+         - LDAPS
+            → 636
+            → SSL
+   ◇ X.500
+      ▪ Standards for directory services
+• Federated
+   ◇ Access multiple enterprises 
+• SSO
+   ◇ Access multiple resources in a single enterprise
+• Something you know
+   ◇ Password
+• Something you are
+   ◇ Fingerprint
+• Something you have
+   ◇ Smart card
+• Attributes
+   ◇ Somewhere you are
+      ▪ Location
+   ◇ Something you can do
+      ▪ Signatures
+   ◇ Something you exhibit
+      ▪ Results of a lie detector
+   ◇ Someone you know
+      ▪ Having someone vouch for you
+• AAA
+   ◇ Framework for identity access security
+   ◇ Authentication
+      ▪ Validating Identity
+   ◇ Authroization
+      ▪ Permitting or denying access to a resource
+   ◇ Accounting 
+      ▪ the process of keeping track of the resources a user access</rich_text>
+    </node>
+    <node name="2.5 Resilience" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1634945127" ts_lastsave="1645573108">
+      <rich_text>• RAID
+   ◇ 0-5 are the original techniques
+   ◇ RAID 0
+      ▪ striped disks
+         - spreads data across several disks
+            → faster retrieval
+         - loss of any drive resilts in loss if all data
+         - Two drive minimum
+   ◇ RAID 1
+      ▪ mirrored disks
+         - Data is copied onto multiple disks
+         - Expensive
+         - two drive minimum
+   ◇ RAID 2
+      ▪ bit-level error-correcting code
+         - disks are striped at the bit level instead of blocks
+         - uses error correcting techniques to attempt to recover any lost data
+   ◇ RAID 3
+      ▪ byte-striped with error check
+         - spreads the data across multiple disks at the byte level
+         - parity bits on one disk
+            → error detection
+            → slower
+            → Three drive minimum
+   ◇ RAID 4
+      ▪ dedicted parity drive
+         - larger stripes than RAID 3
+         - slow
+   ◇ RAID 5
+      ▪ block striped with error check
+         - the most common
+         - spreads parity across multiple drives
+         - Three drive minimum
+• NIC Teaming
+   ◇ Groups multi NICs together to form network called a bind
+   ◇ Load balancing and fault tolerance
+• UPS
+   ◇ Keep power to devices for a short amount of time
+• PDU
+   ◇ Manages the electrical ower for server racks
+   ◇ Efficiently convert the power
+   ◇ Manage heat from conversion
+• Backups
+   ◇ Full
+      ▪ copies all data and resets the archive bit
+      ▪ Allows a restore from one tape
+   ◇ Incremental
+      ▪ restore requires the last full backup and every incremental tape since the last full
+   ◇ Differential
+      ▪ Restore requre last ful and last differential
+• NAS
+   ◇ Single Storage device that serves files over the network to a machine
+• SAN
+   ◇ Multiple devices designed to manage large and complex sets of data at processor speed
+• Elasticity 
+   ◇ Scaling out
+• Scalability
+   ◇ Scaling up and out</rich_text>
+    </node>
+    <node name="2.6 Embedded Systems" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635304665" ts_lastsave="1645628969">
+      <rich_text>• SCADA/ICS
+   ◇ Keep in mind:
+      ▪ Value of information being protected
+      ▪ Physical access to the system
+      ▪ Logical/Network access 
+• Communication
+   ◇ 5G
+      ▪ Fast, worldwide range, large bandwidth, low latency, expensive
+   ◇ Narrow-Band
+      ▪ good range and low power
+         - commonly used in situations such as communiations between drilling rigs
+   ◇ Baseband
+      ▪ 20-20000Hz
+      ▪ simple, carries a single channel.\
+   ◇ Zigbee
+      ▪ low power mesh radio, connects sensors and basic devices</rich_text>
+    </node>
+    <node name="2.7 Physical Security Controls" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635331929" ts_lastsave="1645629031"/>
+    <node name="2.8 Cryptography Concepts" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635332235" ts_lastsave="1645641161">
+      <rich_text>• Digital Signature
+   ◇ Guarantees the contents have not been tampered
+• Hash
+   ◇ one way encryption
+      ▪ used for storing data
+      ▪ simplifying the process data is signed
+• Symmetric
+   ◇ encrypted and decrypted with the same key
+   ◇ Fast
+• Assymetric 
+   ◇ uses seperate keys for encryption and decryption
+   ◇ Slower, Secure
+• Diffie Hellman Key exchange
+   ◇ Each party generates a public/private key pair and distributes the public key.
+   ◇ A shared secret can then be computed and used as a key in a symmetric cipher
+• Elliptic curve cryptography (ECC)
+   ◇ y^2 = x^3 + b
+   ◇ used in key exchange and digital signature
+   ◇ ECDHE
+      ▪ ECC Diffie-Helman Ephemeral
+   ◇ ECDSA
+      ▪ ECC Digital Signature Algorithm
+• Ephemeral Keys
+   ◇ Used once aftere generation
+• Block Cipher
+   ◇ Encrypts one plaintext block at a time
+      ▪ AES, 3DES, IDEA
+      ▪ TLS 1.3 says that only ciphers that support AEAD are allowed
+         - AEAD 
+            → Authenticated encryption with associated data (AEAD)
+• Stream
+   ◇ Encrypts streams of data usually a single byte at a time
+   ◇ XOR, pseudorandom key
+      ▪ A5, RC4, ChaCha and AES-GCM</rich_text>
+    </node>
+  </node>
+  <node name="3.0 Implementation" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635343234" ts_lastsave="1645668014">
+    <node name="3.1 Secure Protocols" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635344057" ts_lastsave="1646671739">
+      <rich_text>• DNSSEC
+   ◇ validates DNS data
+   ◇ provides integrity through origin authentication
+• S/MIME
+   ◇ Standard for emails
+   ◇ Authentication, Integrity and Non-repudiation
+• LDAPS
+   ◇ 636, 3269
+   ◇ SSL/TLS is negotiated before any LDAP traffic is exchanged
+• SNMP
+   ◇ Network Management
+   ◇ v3 is the only secure version
+   ◇ Routing and Sitching
+• IPSec
+   ◇ Layer 3
+   ◇ AH
+      ▪ Authentication Header
+      ▪ Protects integrity
+   ◇ ESP
+      ▪ Encapsulating Security Payload
+      ▪ Confidentiality
+• Transport Mode
+   ◇ end to end
+      ▪ security is provided by endpoint computers
+• Tunnel Mode
+   ◇ portal to portal
+      ▪ security is provided between endpoint node machines and not the host machines
+</rich_text>
+      <rich_text foreground="#f8f8e4e45c5c">• IMAP
+   ◇ 143
+   ◇ secure IMAP4
+      ▪ 993
+• POP3
+   ◇ 110
+   ◇ secure POP3
+      ▪ 995</rich_text>
+      <rich_text>
+• SMTP
+   ◇ 25 between severs
+   ◇ 587 or 465 if clients are invovled
+• SRTP
+   ◇ Secure RTP
+      ▪ VoIP
+• NTP
+   ◇ time sync
+• FTP
+   ◇ 21
+   ◇ FTPS
+      ▪ 989 and 990</rich_text>
+    </node>
+    <node name="3.2 Host and Application Security" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635355728" ts_lastsave="1645713452">
+      <rich_text>• Heuristics Scanning
+   ◇ Behaviour
+• Code signing
+   ◇ Ensures code has not been changed
+• SED, FDE, Opal
+   ◇ Methods of encrypting hard drives
+   ◇ Opal
+      ▪ Hardware-based
+      ▪ keys are stored in the hard drive controller and never in system memory</rich_text>
+    </node>
+    <node name="3.3 Secure Network Design" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635356935" ts_lastsave="1645750597">
+      <rich_text>• Load Balancing
+   ◇ Active/Active
+      ▪ Two or more servers work together to distribute load
+      ▪ If one server fails, service interruption or traffic loss may result
+   ◇ Active/Passive
+      ▪ All traffic sent to active, if active fails, passive promoted to active.
+• Round-Robin
+   ◇ Send traffic to the next server in rotation
+• Weighted Round-robin
+   ◇ Take server load into account
+• Network segregation
+   ◇ Physical
+      ▪ requires two physical networks
+   ◇ Logical
+      ▪ uses one physical network wuth firewalls/routers
+• East-West
+   ◇ within enterprise network
+• North-south
+   ◇ outside of network
+• Extranet
+   ◇ Semiprivate network designed to share information with business partners
+• Always on VPN
+   ◇ When an Internet connection is made, the VPN connection is automatically established
+• Split-Tunnel
+   ◇ Not all traffic is routed via the VPN
+      ▪ multiple connection paths
+      ▪ avoid bottlenecking
+• Full Tunnel
+   ◇ Encrypts all network traffic
+• HTML5 VPN
+   ◇ Doesn't require browser additions
+   ◇ secure, remote access alternative
+• L2TP
+• NAC
+   ◇ Managing endpoints on a case by case basis
+   ◇ Agentless
+      ▪ NAC code resides on the network and is deployed to memory when a machine requests for connection on the network
+• Flood guards
+   ◇ Prevents ddos/dos
+   ◇ implemented via firewalls an IDS/IPS
+• BPDU guards
+   ◇ Spanning Tree Protocol
+   ◇ Prevents BPDU packets from consuming to many resources
+• MAC filtering 
+   ◇ verifies MAC addresses before allowing a connection
+   ◇ Can be bypassed if attackers can observe allowed MAC addresses
+• Loop Detection
+   ◇ Detects loops in local networks
+   ◇ Exists because there is no equivalent to TTL on Layer 2
+   ◇ Layer 2 acts as mesh, Switches
+• Jump Servers
+   ◇ Hardened systems
+   ◇ Often seen providing a means for accessing resources in a screened subnet
+• Forward Proxy
+   ◇ Internet Facing
+   ◇ Protects Client
+• Reverse Proxy
+   ◇ Internally faacing
+   ◇ Protects server
+• HSM 
+   ◇ Allows the use of a key without exposing it to host based threats
+• NGFW
+   ◇ Stateful packet filtering
+      ▪ Filter based on behaviour not associated with the state of communication
+• Stateful
+   ◇  the firewall maintains, or knows, the context of a conversation
+   ◇ Scalability issues, processing costs
+• Stateless
+   ◇  firewall operates on IP addresses and ports
+   ◇ Witout regards to context
+• UTM
+   ◇ all-in-one devices
+   ◇ provides a wide range of services, including switching, firewall, IDS IPS, anti-malware, anti-spam, content filtering, and traffic shaping
+   ◇ might be SPOF (single point of failure)
+• Port Taps
+   ◇ Test Access Point
+      ▪ data collection
+• NGFW and SWGs operate higher in the OSI model to potect against application attacks</rich_text>
+    </node>
+    <node name="3.4 Wireless Security" unique_id="23" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635465982" ts_lastsave="1646587573">
+      <rich_text>• PSK
+   ◇ Pre-Shared Key
+• Enterprise
+   ◇  IEEE 802.1X and a RADIUS authentication server to enable a connection
+• WPA2
+   ◇ uses PSK
+• WPA3
+   ◇ SAE (Simultaneous Authentication of Equals)
+      ▪ key exchange for mesh networks
+         - zero knowledge keygen
+      ▪ p2p
+          - Alternative to using cert or central authority for authentication
+      ▪ “Dragonfly”
+   ◇ Forward Secrecy
+   ◇ EAP methods
+      ▪ TTLS, TLS, EAP, PEAP
+• 802.11
+   ◇ 1997
+   ◇ 1-2Mbs
+   ◇ 2.4GHz
+   ◇ a
+      ▪ 1999
+      ▪ 5GHz
+      ▪ 54Mbs
+   ◇ b
+      ▪ 1999
+      ▪ 2.4Ghz
+      ▪ 11Mbs
+   ◇ g
+      ▪ 2003
+      ▪ 2.4GHz
+      ▪ 54Mbs
+      ▪ b compatible
+   ◇ n
+      ▪ 2009
+      ▪ MIMO
+      ▪ 2.4GHz &amp; 5GHz
+      ▪ 600Mbs
+      ▪ a/b/g compatible
+      ▪ range
+   ◇ ac
+      ▪ 2013
+      ▪ 1300Mbs over 5GHz band
+      ▪ 450Mbs over 2.4GHz band
+      ▪ MU-MIMO
+   ◇ ax
+      ▪ 2019
+      ▪  2.4, 5, and 6
+      ▪ 10 Gbps
+      ▪ OFDMA, MU-MIMO, 1024-QAM
+• EAP
+   ◇ Framework to secure authentication process
+   ◇ EAP-TLS
+      ▪ mutual auth requires client and server certs
+   ◇ PEAP 
+      ▪ no client certs required
+   ◇ EAP-TTLS
+      ▪ no client certs
+      ▪ tunnels client side allowing legacy authentication protocols
+         - PAP, CHAP, MS-CHAP(v2)
+   ◇ EAP-FAST
+      ▪ no certs
+      ▪  lightweight tunneling protocol to enable authentication
+      ▪ Protected Access Credential (PAC)
+• RADIUS
+   ◇ allows users to use their normal credentials across trusted networks
+• Captive Portals
+   ◇ common in coffee shops, airports, hotels, and stores.
+• Site Survey
+   ◇ a process for determining Wi-Fi signal strengths
+• MDM
+   ◇ marketing term for a collective set of commonly employed protection elements associated with mobile devices.
+   ◇ allows device enrollment, provisioning, updating, tracking, policy enforcement, and app management capabilities.</rich_text>
+    </node>
+    <node name="3.5 Mobile Security" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635596821" ts_lastsave="1645747763">
+      <rich_text>• MAM
+   ◇ Manages applications on a device
+• UEM
+   ◇ covers all endpoints from PC's, laptops, phones and wearables
+• Deployment Models
+   ◇ BYOD
+      ▪ Less learning curve
+      ▪ small firms
+      ▪ corpo control is limited
+   ◇ COPE
+      ▪ Corpo-owned, personally enabled
+      ▪ Chosen and paid for by corpos
+      ▪ I love you babe achooo
+   ◇ CYOD
+      ▪ Choose your own device
+      ▪ Corpo-owned
+   ◇ COBO
+      ▪ No personal business</rich_text>
+    </node>
+    <node name="3.6 Cloud Security" unique_id="25" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635628424" ts_lastsave="1645750545">
+      <rich_text>• Zones
+   ◇ Replication
+   ◇ Load Balancing
+   ◇ High Availability
+• Secrets management
+   ◇ central trusted location for certs, passwords, keys
+• VPC endpoint
+   ◇ provides means for connecting to a vpc without going over the internet
+• Security groups
+   ◇ Who can do what
+• Dynamic resource allocation
+   ◇ What can happen when
+• CASB
+   ◇ Security policy enforcement point placed between consumers and providers
+</rich_text>
+    </node>
+    <node name="3.7 Identity and Account Mgmt" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635629172" ts_lastsave="1645750968">
+      <rich_text>• IdP
+   ◇ Creates, manages and is responsible for authenticating identity
+• PIV cards
+   ◇ smart card used by feds
+• CAC cards
+   ◇ used by DoD 
+• Access Control
+   ◇ All users should have a unique ID assigned by a trusted authority
+• Service account 
+   ◇ shoud be granted minimal permissions
+• Policy directs actions</rich_text>
+    </node>
+    <node name="3.8 Authentication and Authorization Services" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635629935" ts_lastsave="1645794587">
+      <rich_text>• TPM
+   ◇ secure cryptoprocessor
+   ◇ assists with keygen and storage
+• HSM
+   ◇ use keys without exposing to host based threats
+• PPP
+   ◇ Encpsulate datagrams
+   ◇ Establish, config and test links using LCP
+   ◇ Use NCP
+• CHAP
+   ◇ uses PPP
+   ◇ Shared Secret
+   ◇ challenge/response
+      ▪ Challenge (randomly generated number)
+         - Reponse (one way hashing function result)
+      ▪ Terminate or continue 
+   ◇ Point to point
+• PAP
+   ◇ user and pass sent thrugh clear
+• RADIUS
+   ◇ uses UDP to connect to centralised network access server
+   ◇ enterprise
+• TACACS+
+   ◇ cliet/server model
+   ◇ handles AAA
+   ◇ similar to RADIUS but uses TCP 49
+• OpenID
+   ◇ authentication
+   ◇ commonly used with Oauth
+• Oauth
+   ◇ authorization
+   ◇ commonly used with OpenID
+• Kerberos
+   ◇ Tickets for authenticating users
+• ABAC
+   ◇ Attributes
+   ◇ Often used in large enterprises that use a federated structure
+   ◇ Costly
+• Rule-based
+   ◇ ACLs
+   ◇ users cant change rules
+   ◇ used in addition to other methods of AC 
+• Role-based
+   ◇ Users are assigned roles that have specific permissions
+•  MAC
+   ◇ Security classifications, labels
+   ◇ restricting access based on sensitivity
+   ◇ Levels of sensitivity
+      ▪ High
+      ▪ Medium
+      ▪ Low
+      ▪ Confidential
+      ▪ Private
+      ▪ Public
+• DAC
+   ◇ owner determines permissions
+   ◇ used on linux</rich_text>
+    </node>
+    <node name="3.9 Public Key Infrastructure" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635875162" ts_lastsave="1646005223">
+      <rich_text>• RA verifies certificate requests
+   ◇ forwards reqests to CA
+• CA is the trusted organization
+   ◇ issues certificates
+   ◇ post CRLs in publicly available lists
+• CRL
+   ◇ Cert revocation list
+   ◇ Should only be modified by the CA
+• Certificate revocation check
+   ◇ Examine CRL or use an OCSP
+• Digital Certificates
+   ◇ contains a public key
+      ▪ binds identity to a certificate
+• Types of certs
+   ◇ End-Entity
+      ▪ issued to specific entity
+   ◇ CA cert
+      ▪ Self signed
+      ▪ Root
+   ◇ Cross-certification cert
+      ▪ independent ca establish p2p trust
+      ▪ CA allows user to trust another CA
+      ▪ Scalability is an issue
+      ▪ Employ bridge ca for better scalability
+   ◇ policy certs
+      ▪ centrally controlled info to clients
+• Certificate formates
+   ◇ DER
+      ▪ single certs
+   ◇ PEM
+      ▪ multiple certs
+   ◇ PFX
+   ◇ CER
+      ▪ ssl cert file format
+      ▪ crt/cer
+         - can only be safely exchanged if encoding is the same
+   ◇ P12
+   ◇ P7B
+• Certificate stapling
+   ◇ efficient way to handle cert verification
+   ◇ oscp sent with cert
+• Certificate pinning
+   ◇ associating a host with expected public key or cert
+• Trust Models
+   ◇ P2P
+      ▪ lateral references
+   ◇ Hybrid
+      ▪ combo
+   ◇ Hierarchical
+      ▪ Upside-down tree
+• Key escrow
+   ◇ both parties have your private key
+   ◇ solves problems related to an inaccesible key</rich_text>
+    </node>
+  </node>
+  <node name="4.0 Operations and Incident Response" unique_id="29" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635912804" ts_lastsave="1635957040">
+    <node name="4.1 Security Tools" unique_id="30" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635942090" ts_lastsave="1646059199">
+      <rich_text>• tracert
+   ◇ Windows
+   ◇ ICMP
+   ◇ ttl
+• traceroute
+   ◇ Linux
+   ◇ ttl
+• Wireshark
+   ◇ easy packet exploration
+• tcpdump
+   ◇ capture packets into PCAP
+• tcpreplay
+   ◇ editing
+• Forensic Tools
+   ◇ dd
+      ▪ cli tool to convert/copy files
+         - can copy drive
+      ▪ linux
+   ◇ memdump
+      ▪ linux
+      ▪ dumps /dev/mem
+   ◇ WinHex
+      ▪ hex editor
+      ▪ commercial
+      ▪ read files, convert encoding types, hash verification
+   ◇ FTK
+      ▪ commercial dd
+      ▪ copy drive, can be used on Windows or linux
+   ◇ Autopsy
+      ▪ forensic tool suite
+      ▪ open source
+</rich_text>
+    </node>
+    <node name="4.2 Incident Response" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635943107" ts_lastsave="1646060425">
+      <rich_text>• IR phases
+   1) Prep
+   2) ID
+   3) Containment
+   4) Eradication
+   5) Recovery
+   6) Lessons Learned
+• Attack Frameworks
+   ◇ MITRE
+      ▪ Used for threat modeling
+      ▪ Based on real-world observations
+   ◇ Diamond Model of Intrusion Analysis
+      ▪ Adversary
+         - Who are they
+            → Motives?
+      ▪ Infrastructure
+         - Any IPs, domain names, emails or other info attacker used
+      ▪ Victim
+         - What were they after
+         - What did they get
+         - Why are we here
+      ▪ Capability
+         - Any unique techiques
+            → Can they be aligned with a specific adversary
+         - What tools
+            → CVEs?, maybe they used their own tools
+   ◇ Cyber kill chain
+      1- Recon
+      2- Weaponization
+      3- Delivery
+      4- Exploitation
+      5- Installation
+      6- C2
+      7- Action and objective
+• BCP
+   ◇ Continue with business
+   ◇ make it profitable again
+• DRP
+   ◇ Recover from a disaster
+• COOP
+   ◇ Continue operations
+   ◇ government</rich_text>
+    </node>
+    <node name="4.3 Investigations" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635945801" ts_lastsave="1646060935">
+      <rich_text>• SIEM
+   ◇ identify, visualise and monitor trends via alerts and dashboard
+   ◇ Correlation logs
+      ▪ Is data related
+• Logs
+   ◇ Windows Event Viewer
+      ▪ Look at windows logs
+   ◇ System log
+      ▪ OS info
+   ◇ APP log
+      ▪ App info
+   ◇ Security log
+      ▪ login data
+      ▪ audit events
+• Syslog
+   ◇ move data into log files
+   ◇ rsyslog, syslog-ng
+      ▪ extend syslog functionality
+• Journalctl
+   ◇ examine logs
+• Metadata
+   ◇ often plays apart in invstegations
+   ◇ correlation
+• NetFlow
+   ◇ collect packets from routers and switches
+   ◇ often used in investigations
+• sFlow
+   ◇ used primarily for traffic management
+   ◇ helpful in DDoS events
+• </rich_text>
+    </node>
+    <node name="4.4 Configuration" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635946749" ts_lastsave="1646061964">
+      <rich_text foreground="#f8f8e4e45c5c">• Firewall rules</rich_text>
+      <rich_text>
+• SOAR
+   ◇ Automate data gathering and intiate incodent response
+• Runbook
+   ◇ focuses on the technical aspects of computer or network
+• Playbooks
+   ◇ More business/people focused</rich_text>
+    </node>
+    <node name="4.5 Digital Forensics" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635946834" ts_lastsave="1646063069">
+      <rich_text>• Legal hold
+   ◇ supersede corpo policy
+   ◇ prevents most/all alterations to data
+      ▪ may be seen as negligence or witholding data if changed
+• Chain of Custody
+   ◇ Original evidence should be securd and protected
+   ◇ analysis should be done on a forensic copy
+   ◇ forensic copy should br proven to be identical
+      ▪ hashes
+   ◇ Time is important
+• Order of volatility
+   1) CPU, cache, register
+   2) routing, arp, process and kernel
+   3) netwokr and data
+   4) memory
+   5) file system/swap
+   6) hard disk
+   7) remotely logged
+   8) backups
+• Time offsets are important</rich_text>
+    </node>
+  </node>
+  <node name="5.0 Governance, Risk and Compliance" unique_id="35" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635957040" ts_lastsave="1636146855">
+    <node name="5.1 Security Controls" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635957250" ts_lastsave="1646148300">
+      <rich_text>• Control Families/
+   ◇ Control Types</rich_text>
+    </node>
+    <node name="5.2 Regulations, Standards and Frameworks" unique_id="37" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635957591" ts_lastsave="1646232447">
+      <rich_text>• GDPR
+   ◇ EU
+   ◇ personal privacy
+   ◇ DPO
+      ▪ Data Protection Officer
+         - ensure legal compliance with data regulations
+• PCI DSS
+   ◇ Credit Card powerhouses
+   ◇ Financial penalty for non-compliance
+• CIS
+   ◇ Benchmarks and controls that should be followed
+• NIST
+   ◇ RMF
+      ▪ Government
+   ◇ CSF
+      ▪ Commercial
+• ISO
+   ◇ 27001
+      ▪ Defines ISMS
+   ◇ 27002
+      ▪ Techniques and code of practice
+   ◇ 27701
+      ▪ Privacy Extension
+   ◇ 31000
+      ▪ risk management
+• SSAE SOC 2
+   ◇ Accountants
+   ◇ Compliance
+   ◇ Type 1
+      ▪ a given moment in time
+   ◇ Type 2
+      ▪ Over a period of time
+• CSA
+   ◇ EA
+      ▪ broad framework
+   ◇ CCM
+      ▪ list of security controls for the cloud
+• NVD, CIS, NCP, DISA, STIG
+   ◇ Benchmark and configuration</rich_text>
+    </node>
+    <node name="5.3 Security Policies" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1635959058" ts_lastsave="1636141571">
+      <rich_text>• AUP
+   ◇ Acceptable Use Policy
+   ◇ What is acceptable us of company products
+• Job rotation
+   ◇ Keep responsibilites changing'
+• Mandatory vacations
+• Seperation of duties
+   ◇ Split knowledge
+      ▪ nobody knows all the details
+   ◇ Dual Control
+      ▪ Two people must be present to perform business functions
+• Clean Desk policy
+• SLA
+   ◇ Service Level Agreement
+   ◇ Minimum ToS
+• MOU
+   ◇ Memorandum of Understanding
+   ◇ statements of confidentiality, both parties agree on contents
+• MSA
+   ◇ Measurement system analysis
+   ◇ Assessment of measurement process, avoids use of incorrect data
+• BPA
+   ◇ Business partnership agreements</rich_text>
+    </node>
+    <node name="5.4 Risk" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1636141583" ts_lastsave="1646149863">
+      <rich_text>• Risk types
+   ◇ External
+   ◇ Internal
+   ◇ Legacy Systems
+   ◇ Multiparty
+   ◇ IP theft
+   ◇ Compliance/licensing
+• Risk mangement
+   ◇ Avoid
+   ◇ Transfer
+   ◇ Mitigate
+   ◇ Accept
+• Sarbanes-Oxley Act
+   ◇ 2002
+   ◇ protects investors from fraud and reporting
+• SLE
+   ◇ AV*EF
+• ALE
+   ◇ SLE*ARO
+• RTO
+   ◇ business continuity
+• RPO
+   ◇ acceptable data loss
+   ◇ backups
+• Control Risk
+   ◇ risk that effects financial reporting</rich_text>
+    </node>
+    <node name="5.5 Data Privacy" unique_id="40" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1636146855" ts_lastsave="1646232540">
+      <rich_text>• Info life-cycle
+   ◇ creation
+   ◇ distribution
+   ◇ use
+   ◇ maintenance
+   ◇ disposition
+• PIA
+   ◇ Private Impact Assessment
+   1) Establish scope
+   2) stakeholders
+   3) document PII info
+   4) Review legal and regulations requirements
+   5) Potential Issues
+   6) Review findings with stakeholders
+   7) Create final report</rich_text>
+    </node>
+  </node>
+  <node name="Results" unique_id="41" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1638644015" ts_lastsave="1638644718">
+    <rich_text>A&amp;D - .75
+G,R&amp;C - .72
+I - .71
+O&amp;IR - .67
+T,A&amp;V - .92</rich_text>
+  </node>
+</cherrytree>
